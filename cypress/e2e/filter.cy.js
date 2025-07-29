@@ -30,7 +30,8 @@ describe('Filtrado de embarques', () => {
     );
 
     cy.get('input[placeholder="Escribe aquí tu búsqueda"]')
-      .type(numeroEmbarque);
+      .type(`${numeroEmbarque}{enter}`);
+
 
     cy.contains(numeroEmbarque, { timeout: 10000 }).should('exist');
     cy.contains('Proveedor API 1', { timeout: 10000 }).should('exist');
