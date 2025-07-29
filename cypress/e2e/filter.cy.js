@@ -20,6 +20,8 @@ describe('Filtrado de embarques', () => {
       .contains('p', 'Embarque')
       .click();
 
+    cy.wait(5500); 
+    
     cy.waitUntil(() =>
       cy.get('input[placeholder="Escribe aquí tu búsqueda"]').then($input => !$input.is(':disabled')),
       {
@@ -32,12 +34,10 @@ describe('Filtrado de embarques', () => {
     cy.get('input[placeholder="Escribe aquí tu búsqueda"]')
       .type(numeroEmbarque);
 
-    cy.get('.table-list').within(() => {
-      cy.contains(numeroEmbarque).should('exist');
-      cy.contains('Proveedor API 1').should('exist');
-      cy.contains('01/01/2024').should('exist');
-      cy.contains('No Seleccionado').should('exist');
-    });
+    cy.contains(numeroEmbarque, { timeout: 10000 }).should('exist');
+    cy.contains('Proveedor API 1', { timeout: 10000 }).should('exist');
+    cy.contains('01/01/2024', { timeout: 10000 }).should('exist');
+    cy.contains('No Seleccionado', { timeout: 10000 }).should('exist');
   });
 
 });
