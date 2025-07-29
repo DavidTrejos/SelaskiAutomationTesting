@@ -13,15 +13,13 @@ describe('Filtrado de embarques', () => {
 
     cy.get('.filter-list-container', { timeout: 10000 }).should('be.visible');
 
-    cy.get('div.select-btn').contains('Seleccionar').click();
+    cy.get('div.select-btn').contains('Seleccionar') .should('be.visible').click();
 
-    cy.get('div.search-options')
+    cy.get('div.search-options', { timeout: 10000 })
       .should('be.visible')
       .contains('p', 'Embarque')
       .click();
 
-    cy.wait(5500); 
-    
     cy.waitUntil(() =>
       cy.get('input[placeholder="Escribe aquí tu búsqueda"]').then($input => !$input.is(':disabled')),
       {
