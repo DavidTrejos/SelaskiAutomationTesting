@@ -24,20 +24,6 @@ Automatizar el siguiente flujo:
 - ✅ Git y GitHub
 
 
----
-selaski-cypress-automation/
-├── cypress/
-│   ├── e2e/
-│   │   ├── auth_and_search.cy.js     # Flujo combinado de autenticación y búsqueda
-│   │   └── filter.cy.js              # Prueba específica de filtrado por embarque
-│   ├── fixtures/
-│   │   └── testData.json        
-│   └── support/
-│       ├── commands.js               # Comandos personalizados, como autenticarConPIN
-│       └── e2e.js                    # Soporte general para las pruebas E2E
-├── .gitignore                        # Archivos/Carpetas ignoradas por Git
-├── cypress.config.js                 # Configuración principal de Cypress
-├── package.json                      # Dependencias y scripts npm
-└── README.md                         # Documentación del proyecto
+
 
                     
