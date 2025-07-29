@@ -23,21 +23,6 @@ Automatizar el siguiente flujo:
 - ✅ JavaScript
 - ✅ Git y GitHub
 
----
 
-## 📂 Estructura del Proyecto
 
-selaski-cypress-automation/
-├── cypress/
-│   ├── e2e/
-│   │   ├── auth_and_search.cy.js
-│   │   └── filter.cy.js         
-│   ├── fixtures/
-│   │   └── testData.json          
-│   └── support/
-│       ├── commands.js          
-│       └── e2e.js                 
-├── .gitignore                     
-├── cypress.config.js           
-├── package.json                    
-└── README.md                        
+                    
