@@ -30,14 +30,14 @@ Automatizar el siguiente flujo:
 selaski-cypress-automation/
 ├── cypress/
 │   ├── e2e/
-│   │   ├── auth_and_search.cy.js 
-│   │   └── filter.cy.js            
+│   │   ├── auth_and_search.cy.js
+│   │   └── filter.cy.js         
 │   ├── fixtures/
-│   │   └── testData.json            
+│   │   └── testData.json          
 │   └── support/
-│       ├── commands.js               
-│       └── e2e.js                    
-├── .gitignore                        
-├── cypress.config.js            
-├── package.json                     
+│       ├── commands.js          
+│       └── e2e.js                 
+├── .gitignore                     
+├── cypress.config.js           
+├── package.json                    
 └── README.md                        
